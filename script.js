@@ -4,7 +4,7 @@ function Book(title, author, pages, haveRead, info) {
   this.haveRead = haveRead;
   this.info = info;
   this.giveInfo = () => {
-    console.log(this.info);
+    return this.info;
   };
 }
 
@@ -24,5 +24,5 @@ const ulysses = new Book(
   "An iconic work of Irish literature set in early 20th century Dublin"
 );
 
-theHobbit.giveInfo();
-ulysses.giveInfo();
+console.log(theHobbit.giveInfo());
+console.log(ulysses.giveInfo());
